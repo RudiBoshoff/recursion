@@ -3,7 +3,7 @@
 n = [4,8,6,2,1,7,5,3]
 
 def merge_sort(array)
-  if array.length < 2
+  if array.length < 2 # cannot sort if it is one element
     return array
   else
     size = array.length
@@ -19,7 +19,7 @@ end
 
 def merge(left, right)
     merged_arr = []
-
+    # Check if left element is smaller than right element then keep the results
     until left.empty? || right.empty?
         merged_arr << (left.first <= right.first ? left.shift : right.shift)
     end
