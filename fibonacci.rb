@@ -15,7 +15,9 @@ def fibs(n)
   solutions[n]
 end
 
-n = 10
+puts "The nth value in the Fibonacci Sequence is:"
+n = gets.chomp.to_i
+# n = 10
 print "fibs_rec(#{n}) = "
 puts  fibs_rec(n)
 print "fibs(#{n}) = "
